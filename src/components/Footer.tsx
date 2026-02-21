@@ -10,6 +10,14 @@ export function Footer() {
           </p>
           <div className="flex gap-8">
             <Link
+              href="https://github.com/MenokoOG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-slate-400 transition hover:text-cyan-400"
+            >
+              GitHub
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/lawrence-jefferson-ii-46497075"
               target="_blank"
               rel="noopener noreferrer"
