@@ -1,0 +1,47 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        slate: {
+          950: "#0a0c10",
+          925: "#0d1117",
+          900: "#161b22",
+        },
+        accent: {
+          cyan: "#22d3ee",
+          amber: "#fbbf24",
+          emerald: "#34d399",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-display)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
+      },
+      animation: {
+        "fade-in": "fadeIn 0.6s ease-out forwards",
+        "slide-up": "slideUp 0.6s ease-out forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
