@@ -10,7 +10,7 @@ export function Hero() {
             className="mb-4 font-mono text-sm uppercase tracking-widest text-cyan-400 opacity-90 animate-fade-in"
             style={{ animationDelay: "0s" }}
           >
-            Sr. Software Engineer · Founder · U.S. Army Veteran
+            CTO @ Welcoin · Sr. SWE · Founder · U.S. Army Veteran
           </p>
           <h1
             className="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl animate-slide-up opacity-0"
@@ -23,9 +23,11 @@ export function Hero() {
             className="mt-6 text-lg text-slate-400 leading-relaxed animate-slide-up opacity-0"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
-            Full stack engineer & cybersecurity enthusiast. Co-founder at{" "}
-            <span className="text-amber-400/90">Crimson Obsidian Industries</span>.
-            Building AI-augmented, spec-driven software and solving real-world problems.
+            Senior full stack engineer and cybersecurity enthusiast, currently upskilling in
+            <span className="text-slate-300"> AI engineering</span> and focused on solving
+            real-world problems. CTO at Welcoin and co-founder at{" "}
+            <span className="text-amber-400/90">Crimson Obsidian Industries</span>, building
+            AI-augmented, spec-driven software.
           </p>
           <div
             className="mt-10 flex flex-wrap gap-4 animate-slide-up opacity-0"

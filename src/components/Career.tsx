@@ -1,11 +1,19 @@
 const EXPERIENCE = [
   {
+    role: "Chief Technology Officer",
+    company: "Welcoin",
+    period: "Feb 2026 – Present",
+    location: "Clarkston, WA",
+    summary:
+      "CTO responsible for driving technology strategy and engineering delivery.",
+  },
+  {
     role: "Co-founder · CTO · Full Stack Engineer",
     company: "OkO Forge LLC DBA Crimson Obsidian Industries and Labs",
     period: "Apr 2023 – Present",
     location: "United States",
     summary:
-      "Veteran-owned AI Spec Driven Development (SDD) and research company. Specializing in AI Engineering, JS/TS, Python, and full stack development.",
+      "Veteran-owned and operated AI Spec Driven Development (SDD) and research company specializing in AI engineering, JavaScript/TypeScript, Python, and full stack development.",
   },
   {
     role: "Chief Technology Officer · Co-founder",

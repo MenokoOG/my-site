@@ -10,14 +10,13 @@ export function About() {
             <p>
               Senior full stack engineer and cybersecurity enthusiast, currently back in school
               upskilling in <strong className="text-slate-300">AI engineering</strong> and focused
-              on bringing these skills to the table to solve real-world problems.
+              on bringing these skills to the table to help solve real-world problems.
             </p>
             <p>
-              We run our side hustle at OkO Froge LLC DBA{" "}
-              <strong className="text-amber-400/90">Crimson Obsidian Industries and Labs</strong>—
-              taking critical certification programs, connecting with mentors, and running AI agent
-              ethic rehabilitation and malfunctioning agent labs locally to build case studies and
-              grow our network.
+              Currently serving as CTO at Welcoin while also running a side-hustle at OkO Forge LLC
+              DBA <strong className="text-amber-400/90">Crimson Obsidian Industries and Labs</strong>.
+              Continuing education, mentorship, and hands-on AI engineering work are core to how I
+              grow, experiment, and deliver value.
             </p>
           </div>
           <div className="space-y-6">
@@ -26,7 +25,7 @@ export function About() {
                 Top skills
               </h3>
               <ul className="flex flex-wrap gap-2">
-                {["Software Development", "Business Process Improvement", "Infrastructure Management"].map(
+                {["Technology Leadership", "AI Solutions", "Blockchain"].map(
                   (skill) => (
                     <li
                       key={skill}
