@@ -6,6 +6,7 @@ import { useState } from "react";
 const NAV = [
   { label: "About", href: "#about" },
   { label: "Career", href: "#career" },
+  { label: "Chat", href: "#chat" },
   { label: "Links", href: "#links" },
 ];
 
@@ -37,9 +38,15 @@ export function Header() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <span className={`h-0.5 w-5 bg-white transition ${open ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`h-0.5 w-5 bg-white transition ${open ? "opacity-0" : ""}`} />
-          <span className={`h-0.5 w-5 bg-white transition ${open ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span
+            className={`h-0.5 w-5 bg-white transition ${open ? "rotate-45 translate-y-2" : ""}`}
+          />
+          <span
+            className={`h-0.5 w-5 bg-white transition ${open ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`h-0.5 w-5 bg-white transition ${open ? "-rotate-45 -translate-y-2" : ""}`}
+          />
         </button>
       </div>
       {open && (

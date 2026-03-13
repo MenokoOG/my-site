@@ -35,7 +35,8 @@ const EXPERIENCE = [
     company: "Military Order of the Purple Heart of the U.S.A., Inc.",
     period: "Oct 2024 – Dec 2025",
     location: "Clarkston, WA",
-    summary: "Volunteer project work for MOPH: refactoring website and increasing visitor engagement.",
+    summary:
+      "Volunteer project work for MOPH: refactoring website and increasing visitor engagement.",
   },
   {
     role: "Back-end Developer",
@@ -71,10 +72,18 @@ const EXPERIENCE = [
 ];
 
 const EDUCATION = [
-  { name: "V School", detail: "Certification, JavaScript Full Stack (MERN) Web Development", year: "2024" },
+  {
+    name: "V School",
+    detail: "Certification, JavaScript Full Stack (MERN) Web Development",
+    year: "2024",
+  },
   { name: "Syracuse University", detail: "Python PCAP", year: "2022–2023" },
   { name: "Google", detail: "Cybersecurity Certificate Program", year: "2023" },
-  { name: "American Military University", detail: "AS, Web Page, Digital/Multimedia and Information Resources Design", year: "2009–2012" },
+  {
+    name: "American Military University",
+    detail: "AS, Web Page, Digital/Multimedia and Information Resources Design",
+    year: "2009–2012",
+  },
 ];
 
 const CERTS = [
@@ -87,13 +96,17 @@ const CERTS = [
 
 export function Career() {
   return (
-    <section id="career" className="relative border-t border-white/5 py-24 px-6">
+    <section
+      id="career"
+      className="relative border-t border-white/5 py-24 px-6"
+    >
       <div className="mx-auto max-w-6xl">
         <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Career <span className="text-cyan-400">journey</span>
         </h2>
         <p className="mt-3 text-slate-400">
-          From military service to leading technology and product—engineer, founder, and builder.
+          From military service to leading technology and product—engineer,
+          founder, and builder.
         </p>
 
         <div className="mt-14 space-y-12">
@@ -102,16 +115,27 @@ export function Career() {
               Experience
             </h3>
             <ul className="space-y-0">
-              {EXPERIENCE.map((job, i) => (
-                <li key={`${job.company}-${job.period}`} className="group relative">
+              {EXPERIENCE.map((job) => (
+                <li
+                  key={`${job.company}-${job.period}`}
+                  className="group relative"
+                >
                   <div className="flex flex-col gap-1 border-l-2 border-white/10 pl-6 pb-10 last:pb-0 group-hover:border-cyan-500/50 transition-colors">
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <span className="font-semibold text-white">{job.role}</span>
-                      <span className="font-mono text-xs text-slate-500">{job.period}</span>
+                      <span className="font-semibold text-white">
+                        {job.role}
+                      </span>
+                      <span className="font-mono text-xs text-slate-500">
+                        {job.period}
+                      </span>
                     </div>
-                    <p className="text-amber-400/90 font-medium">{job.company}</p>
+                    <p className="text-amber-400/90 font-medium">
+                      {job.company}
+                    </p>
                     <p className="text-xs text-slate-500">{job.location}</p>
-                    <p className="mt-2 text-sm text-slate-400 leading-relaxed">{job.summary}</p>
+                    <p className="mt-2 text-sm text-slate-400 leading-relaxed">
+                      {job.summary}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -125,10 +149,15 @@ export function Career() {
               </h3>
               <ul className="space-y-4">
                 {EDUCATION.map((ed) => (
-                  <li key={ed.name} className="rounded-lg border border-white/10 bg-white/5 p-4">
+                  <li
+                    key={ed.name}
+                    className="rounded-lg border border-white/10 bg-white/5 p-4"
+                  >
                     <p className="font-medium text-white">{ed.name}</p>
                     <p className="text-sm text-slate-400">{ed.detail}</p>
-                    <p className="font-mono text-xs text-slate-500 mt-1">{ed.year}</p>
+                    <p className="font-mono text-xs text-slate-500 mt-1">
+                      {ed.year}
+                    </p>
                   </li>
                 ))}
               </ul>
